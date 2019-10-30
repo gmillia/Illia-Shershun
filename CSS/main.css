@@ -59,6 +59,54 @@ h5{
     background: rgba(233, 155, 147, 0.603);
 }
 
+/*Footer*/
+.footer
+{
+    border-top: 1px dashed black;
+    padding: 30px 0;
+}
+
+.grid-wrapper
+{
+    display: grid;
+    margin: 0 auto;
+}
+
+.footer .grid-wrapper {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.contact-info
+{
+    grid-column: 2 / span 6;
+    grid-row: 1;
+}
+
+.contact-info p {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p a
+{
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.footer .social-info {
+    grid-column: 2 / span 6;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+}
+
+.footer .logo-sm {
+    width: 20px;
+    margin-left: 10px;
+}
+
 /*About Page*/
 .topImage
 {

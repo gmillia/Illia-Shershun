@@ -217,35 +217,59 @@ ul
 
 /*Contact form*/
 
+.container.contact
+{
+    background: rgb(230, 228, 228);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
 .contact-name
 {
     font-size: 75px;
 }
 
-.gmail-icon
+.contact-description
+{
+    padding-bottom: 50px;
+}
+
+.email-div, .phone-div, .in-div, .telegram-div
+{
+    text-align: center;
+}
+
+.contact-icon
 {
     max-height: 200px;
     max-width: 200px;
     background: transparent;
 }
 
-.gmail-icon:hover
-{
-    background: black;
-}
-
-.email-link
-{
-    border-bottom: 1px solid black;;
-}
-
-.email-text
+.email-text, .phone-text, .in-text, .telegram-text
 {
     max-width: 200px;
+    text-align: center;
+    display: inline-block;
 }
 
 a.contact-link
 {
     text-decoration: none;
     color: black;
+    border-bottom: 1px solid lightblue;
+    padding-bottom: 2px;
+}
+
+a.contact-link:hover
+{
+    color: rgb(68, 169, 231);
+}
+
+.email-name, .phone-name, .in-name, .telegram-name
+{
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(240, 30, 30);
 }

@@ -35,6 +35,7 @@ h5{
 .container
 {
     margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .hr-light
@@ -63,9 +64,12 @@ h5{
 .footer
 {
     border-top: 1px dashed black;
-    padding: 30px 0;
 }
 
+
+
+
+/*
 .grid-wrapper
 {
     display: grid;
@@ -106,14 +110,22 @@ h5{
     width: 20px;
     margin-left: 10px;
 }
+*/
 
 /*About Page*/
+
+.about{
+    margin-top: -150px;
+    border-bottom: 1px solid black;
+    margin-bottom: -10px;;
+}
 .topImage
 {
     width: 125%;
     height: auto;
     overflow: hidden;
-    margin-top: -175px;
+    margin-top: 0px;
+    margin-bottom: 100px;
 }
 
 #ukraineIMG
@@ -125,7 +137,7 @@ h5{
 }
 
 .h1-about{
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .h1-about
@@ -155,5 +167,85 @@ ul
 
 .infoBody
 {
-    font-size: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+/*Porfolio*/
+
+.projects
+{
+    margin-top: 10%;
+}
+
+.ohsrank-card, .statdoc-card, .portal-card
+{
+    background-image: url("../IMG/ohsrank.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: 100%; 
+}
+
+.statdoc-card
+{
+    background-image: url("../IMG/statdoc.png");
+}
+
+.portal-card
+{
+    background-image: url("../IMG/portal.jpg");
+}
+
+.btn
+{
+    cursor: pointer;
+}
+
+.btn-pink
+{
+    background: pink;
+}
+
+.btn-pink:hover
+{
+    background: rgb(245, 148, 164);
+}
+
+/*Contact form*/
+
+.contact-name
+{
+    font-size: 75px;
+}
+
+.gmail-icon
+{
+    max-height: 200px;
+    max-width: 200px;
+    background: transparent;
+}
+
+.gmail-icon:hover
+{
+    background: black;
+}
+
+.email-link
+{
+    border-bottom: 1px solid black;;
+}
+
+.email-text
+{
+    max-width: 200px;
+}
+
+a.contact-link
+{
+    text-decoration: none;
+    color: black;
 }

@@ -178,7 +178,7 @@ ul
     margin-top: 3%;
 }
 
-.ohsrank-card, .statdoc-card, .portal-card
+.ohsrank-card, .statdoc-card, .portal-card, .car-card
 {
     background-image: url("../IMG/ohsrank.jpg");
     background-repeat: no-repeat;
@@ -198,6 +198,16 @@ ul
 .portal-card
 {
     background-image: url("../IMG/portal.jpg");
+}
+
+.car-card
+{
+    background-image: url("../IMG/ml.jpg");
+}
+
+.fifa-card
+{
+    background-image: url("../IMG/fifa.jpg");
 }
 
 .btn

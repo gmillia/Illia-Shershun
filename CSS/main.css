@@ -227,59 +227,84 @@ ul
 
 /*Contact form*/
 
-.container.contact
+.container-fluid
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+}
+
+.contact-content
 {
     background: rgb(230, 228, 228);
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+    padding-bottom: 75px;
 }
+
+/*For Cntact*/
+
 .contact-name
 {
     font-size: 75px;
 }
 
+/*Default margin for "get in touch.." on desktop*/
 .contact-description
 {
-    padding-bottom: 50px;
+    margin-bottom: 100px;
 }
 
-.email-div, .phone-div, .in-div, .telegram-div
+/*For contact name*/
+.email-name, .phone-name, .linkedin-name, .telegram-name
 {
-    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    color: red;
 }
 
-.contact-icon
+/*Color for the fa icons*/
+.fa-envelope-open, .fa-phone-alt, .fa-linkedin-in, .fa-telegram-plane
 {
-    max-height: 200px;
-    max-width: 200px;
-    background: transparent;
+    color: plum;
 }
 
-.email-text, .phone-text, .in-text, .telegram-text
+/*Color on hover for fa icons*/
+.fa-envelope-open:hover, .fa-phone-alt:hover, .fa-linkedin-in:hover, .fa-telegram-plane:hover
 {
-    max-width: 200px;
-    text-align: center;
-    display: inline-block;
+    color: rgb(182, 44, 182);
 }
 
-a.contact-link
+@media only screen and (max-width: 414px)
 {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid lightblue;
-    padding-bottom: 2px;
-}
+    /*Display in column style in mobile*/
+    .contacts
+    {
+        display: flex;
+        flex-direction: column !important;
+    }
 
-a.contact-link:hover
-{
-    color: rgb(68, 169, 231);
-}
+    /*Decrease space between "get in touch" and first contact method in mobile*/
+    .contact-description
+    {
+        margin-bottom: 50px;
+    }
 
-.email-name, .phone-name, .in-name, .telegram-name
-{
-    margin-top: 20px;
-    font-size: 30px;
-    color: rgb(240, 30, 30);
+    /*Space between mobile and other contact methods*/
+    .phone 
+    {
+        margin-top: 20px;
+        margin-bottom: 50px;  /*30px from email + 20px from top*/
+    }
+
+    /*Space between contact methods*/
+    .linkedin, .email, .telegram
+    {
+        margin-bottom: 50px;
+    }
 }
